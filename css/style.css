@@ -165,7 +165,7 @@ body {
     max-height: 500px;
 }
 .card1 {
-    width: 90%;
+    width: 710px;
     height: fit-content;
     /* background-color: #106fb2cb; */
     color: white;
@@ -176,18 +176,26 @@ body {
     position: relative;
     top: 30px;
 }
+#hourly-forecast {
+    max-height: 300px; /* Set a max height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scrollbar-width: thin; /* Make scrollbar thinner */
+}
+
 #hourly-forecast::-webkit-scrollbar {
-    display: none;
+    width: 6px; /* Width of the scrollbar */
 }
 
-#hourly-forecast {
-    scrollbar-width: none;
+#hourly-forecast::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded corners for scrollbar */
 }
 
-#hourly-forecast {
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
+#hourly-forecast::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darken on hover */
 }
+
 #05-Days-Forecast::-webkit-scrollbar {
     display: none;
 }
@@ -198,13 +206,13 @@ body {
     overflow: -moz-scrollbars-none;
 }
 .feellikebox {
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.381);
-    width: 80%;
-    max-width: 75%;
-    max-height: 60%;
+    width: 100%;
+    max-width: 100%; /* Allow full width */
+    padding: 20px; /* Add padding inside the box */
 }
 .HumidityCol{
     position: relative;
