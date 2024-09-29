@@ -1,7 +1,7 @@
 
 /* Light mode (default) */
 body {
-    background: url(img/sunny-bmw.jpg) no-repeat center center fixed;
+    background: url(/img/sunny-bmw.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: white;
     color: black;
@@ -221,7 +221,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.381);
     max-width: 60%;
-    margin: auto;
+    margin: 10px;
 }
 
 .map-container {
@@ -243,8 +243,8 @@ body {
 
 .mappo{
     position: relative;
-    top: -570px;
-    left: -700px;
+    top: -670px;
+    left: -450px;
 }
 .form-control {
     width: 750px; 
