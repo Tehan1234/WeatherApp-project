@@ -1,7 +1,7 @@
 
 /* Light mode (default) */
 body {
-    background-image: url(/img/sunny-bmw.jpg) no-repeat center center fixed;
+    background-image: url(./img/sunny-bmw.jpg) no-repeat center center fixed;
     background-size: cover;
     background-color: white;
     color: black;
